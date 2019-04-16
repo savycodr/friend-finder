@@ -2,7 +2,13 @@
 function Friends(){
 
   // an array of Friend objects
-  this.friends = [];
+  // will seed a few Friends
+  this.friends = [ 
+    new Friend("Sally","http://lorempixel.com/g/400/200/cats",
+    [1,2,1,1,1,1,2,1,1,3]),
+    new Friend("Roger","http://lorempixel.com/g/400/200/sports",
+    [5,2,5,5,5,5,2,5,5,3])
+  ];
 
   // a method to add a Friend to the array
   // parameters are String name, String photoUrl, Array of Ints scores
@@ -42,10 +48,12 @@ function Friend(name, photoUrl, scores ){
 
 }
 
-module.exports = Friends;
+// create a Friends object and export it
+var friends = new Friends();
+module.exports = friends;
 
 // Test Case
-var friends = new Friends();
-friends.addFriend("Tim", "http:\\lala.com", [0,1,2,3,4,5,4,3,2,1]);
-friends.printFriends();
+//  var friends = new Friends();
+//  friends.addFriend("Tim", "http:\\lala.com", [0,1,2,3,4,5,4,3,2,1]);
+// friends.printFriends();
 
