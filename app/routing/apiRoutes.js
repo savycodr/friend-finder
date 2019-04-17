@@ -8,7 +8,7 @@ module.exports = function(app) {
     return res.json(FriendData);
   });
 
-  // A POST routes `/api/friends`. This will be used to handle incoming survey results. This route will also be used to handle the compatibility logic.
+  // A POST routes `/api/friends`. This will be used to handle incoming survey results. This route will also be used to handle the compatibility logic. The response will hold the most compatible Friend.
   // Create New Friends - takes in JSON input
   app.post("/api/friends", function(req, res) {
     // req.body hosts is equal to the JSON post sent from the user
@@ -36,7 +36,7 @@ module.exports = function(app) {
     for (var i=0; i<allFriends.length; i++){
       // store the compatibility number is only needed inside this loop
       var compatibility = 0;
-      // console.log("The Friend we are looking at now " + allFriends[i].name);
+      console.log("The Friend we are looking at now " + allFriends[i].name);
       var friendScores = allFriends[i].scores;
       // console.log("the friends scores we are looking at " + friendScores);
       // Cycle through all 10 scores
@@ -47,8 +47,8 @@ module.exports = function(app) {
         // console.log("The difference is " + difference);
         // get the sum of the absolute of all the differences in score
         compatibility = compatibility + difference;
-        // console.log("Your compatibility is " + compatibility);
       }
+        console.log("Your compatibility is " + compatibility);
       // if the combatibility score is less than the lowest number
       // you have found a better match
       if (compatibility <= lowestNumber)
@@ -57,7 +57,7 @@ module.exports = function(app) {
         console.log("the lowest number is " + lowestNumber);
         // Store the Friend that you are compatible with
         bestFriend = allFriends[i];
-      }
+      } 
 
     }
 
