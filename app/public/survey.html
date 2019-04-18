@@ -34,7 +34,9 @@
           margin-bottom: 10px;
         }
 
-
+        .validateFeedback{
+          color:red;
+        }
     </style>    
 
   </head>
@@ -43,138 +45,163 @@
       <h2> Survey Questions</h2>
       <hr>
       <h3><strong>About You</strong></h3>
-      <h4>Name (Required)</h4>
-      <div class="input-group mb-3" >
-        <input type="text" id="name" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" required`>
-      </div>
-      <h4>Link to Photo Image (Required)</h4>
-      <div class="input-group mb-3">
-        <input type="text" id="photoUrl" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-      </div>
-      <h3><strong>Question 1</strong></h3>
-      <h4>Web Development is an attractive skill.</h4>
-      <div class="form-group col-md-3" style="padding: 0px;">
-        <select id="question1" class="form-control">
-          <option value="default" selected>Select an Option</option>
-          <option>1 (Strongly Disagree)</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5 (Strongly Agree)</option>
-        </select>
-      </div> 
-      <h3><strong>Question 2</strong></h3>
-      <h4>Cats are one of life's greatest gifts.</h4>
-      <div class="form-group col-md-3" style="padding: 0px;">
-        <select id="question2" class="form-control">
-          <option value="default" selected>Select an Option</option>
-          <option>1 (Strongly Disagree)</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5 (Strongly Agree)</option>
-        </select>
-      </div>   
-      <h3><strong>Question 3</strong></h3>
-      <h4>The best time to go Christmas shopping is December 24.</h4>
-      <div class="form-group col-md-3" style="padding: 0px;">
-        <select id="question3" class="form-control">
-          <option value="default" selected>Select an Option</option>
-          <option>1 (Strongly Disagree)</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5 (Strongly Agree)</option>
-        </select>
-      </div>
-      <h3><strong>Question 4</strong></h3>
-      <h4>A walk on the beach beats down hill skiing.</h4>
-      <div class="form-group col-md-3" style="padding: 0px;">
-        <select id="question4" class="form-control">
-          <option value="default" selected>Select an Option</option>
-          <option>1 (Strongly Disagree)</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5 (Strongly Agree)</option>
-        </select>
-      </div>  
-      <h3><strong>Question 5</strong></h3>
-      <h4>Spongebob is funnier than The Simpsons.</h4>
-      <div class="form-group col-md-3" style="padding: 0px;">
-        <select id="question5" class="form-control">
-          <option value="default" selected>Select an Option</option>
-          <option>1 (Strongly Disagree)</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5 (Strongly Agree)</option>
-        </select>
-      </div> 
-      <h3><strong>Question 6</strong></h3>
-      <h4>Golf is the best game on TV.</h4>
-      <div class="form-group col-md-3" style="padding: 0px;">
-        <select id="question6" class="form-control">
-          <option value="default" selected>Select an Option</option>
-          <option>1 (Strongly Disagree)</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5 (Strongly Agree)</option>
-        </select>
-      </div>  
-      <h3><strong>Question 7</strong></h3>
-      <h4>Silk is better than denim.</h4>
-      <div class="form-group col-md-3" style="padding: 0px;">
-        <select id="question7" class="form-control">
-          <option value="default" selected>Select an Option</option>
-          <option>1 (Strongly Disagree)</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5 (Strongly Agree)</option>
-        </select>
-      </div>
-      <h3><strong>Question 8</strong></h3>
-      <h4>Diner and dancing beats dinner and a movie.</h4>
-      <div class="form-group col-md-3" style="padding: 0px;">
-        <select id="question8" class="form-control">
-          <option value="default" selected>Select an Option</option>
-          <option>1 (Strongly Disagree)</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5 (Strongly Agree)</option>
-        </select>
-      </div> 
-      <h3><strong>Question 9</strong></h3>
-      <h4>Mr. Nobody is one of the greatest movies.</h4>
-      <div class="form-group col-md-3" style="padding: 0px;">
-        <select id="question9" class="form-control">
-          <option value="default" selected>Select an Option</option>
-          <option>1 (Strongly Disagree)</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5 (Strongly Agree)</option>
-        </select>
-      </div>  
-      <h3><strong>Question 10</strong></h3>
-      <h4>Playstation is more fun than a good book.</h4>
-      <div class="form-group col-md-3" style="padding: 0px;">
-        <select id="question10" class="form-control">
-          <option value="default" selected>Select an Option</option>
-          <option>1 (Strongly Disagree)</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5 (Strongly Agree)</option>
-        </select>
-      </div> 
-      <!-- <a  href="\" id="submit" class="btn btn-lg col-md-12" style="background-color:#3379B7; color: white;" data-toggle="modal" data-target="#exampleModal"><h4><i class="far fa-check-square"></i> -->
-        <button  id="submit" class="btn btn-lg col-md-12" style="background-color:#3379B7; color: white;" value="Submit"><h4><i class="far fa-check-square"></i>
-          Submit</h4></button>
-
+      <form >
+        <h4>Name (Required)</h4>
+        <div class="input-group mb-3" >
+          <input type="text" id="name" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" required`>
+          <div class="validateFeedback col-md-12" id="validNameFeedback">
+          </div>
+          </div>
+        <h4>Link to Photo Image (Required)</h4>
+        <div class="input-group mb-3">
+          <input type="text" id="photoUrl" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
+          <div class="validateFeedback col-md-12" id="validUrlFeedback">
+          </div>
+        </div>
+        <h3><strong>Question 1</strong></h3>
+        <h4>Web Development is an attractive skill.</h4>
+        <div class="form-group col-md-3" style="padding: 0px;">
+          <select id="question1" class="form-control">
+            <option value="default" selected>Select an Option</option>
+            <option>1 (Strongly Disagree)</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5 (Strongly Agree)</option>
+          </select>
+          <div class="validateFeedback col-md-12" id="validQ1Feedback">
+          </div>
+        </div> 
+        <h3><strong>Question 2</strong></h3>
+        <h4>Cats are one of life's greatest gifts.</h4>
+        <div class="form-group col-md-3" style="padding: 0px;">
+          <select id="question2" class="form-control">
+            <option value="default" selected>Select an Option</option>
+            <option>1 (Strongly Disagree)</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5 (Strongly Agree)</option>
+          </select>
+          <div class="validateFeedback col-md-12" id="validQ2Feedback">
+          </div>
+        </div>   
+        <h3><strong>Question 3</strong></h3>
+        <h4>The best time to go Christmas shopping is December 24.</h4>
+        <div class="form-group col-md-3" style="padding: 0px;">
+          <select id="question3" class="form-control">
+            <option value="default" selected>Select an Option</option>
+            <option>1 (Strongly Disagree)</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5 (Strongly Agree)</option>
+          </select>
+          <div class="validateFeedback col-md-12" id="validQ3Feedback">
+          </div>
+        </div>
+        <h3><strong>Question 4</strong></h3>
+        <h4>A walk on the beach beats down hill skiing.</h4>
+        <div class="form-group col-md-3" style="padding: 0px;">
+          <select id="question4" class="form-control">
+            <option value="default" selected>Select an Option</option>
+            <option>1 (Strongly Disagree)</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5 (Strongly Agree)</option>
+          </select>
+          <div class="validateFeedback col-md-12" id="validQ4Feedback">
+          </div>
+        </div>  
+        <h3><strong>Question 5</strong></h3>
+        <h4>Spongebob is funnier than The Simpsons.</h4>
+        <div class="form-group col-md-3" style="padding: 0px;">
+          <select id="question5" class="form-control">
+            <option value="default" selected>Select an Option</option>
+            <option>1 (Strongly Disagree)</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5 (Strongly Agree)</option>
+          </select>
+          <div class="validateFeedback col-md-12" id="validQ5Feedback">
+          </div>
+        </div> 
+        <h3><strong>Question 6</strong></h3>
+        <h4>Golf is the best game on TV.</h4>
+        <div class="form-group col-md-3" style="padding: 0px;">
+          <select id="question6" class="form-control">
+            <option value="default" selected>Select an Option</option>
+            <option>1 (Strongly Disagree)</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5 (Strongly Agree)</option>
+          </select>
+          <div class="validateFeedback col-md-12" id="validQ6Feedback">
+          </div>
+        </div>  
+        <h3><strong>Question 7</strong></h3>
+        <h4>Silk is better than denim.</h4>
+        <div class="form-group col-md-3" style="padding: 0px;">
+          <select id="question7" class="form-control">
+            <option value="default" selected>Select an Option</option>
+            <option>1 (Strongly Disagree)</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5 (Strongly Agree)</option>
+          </select>
+          <div class="validateFeedback col-md-12" id="validQ7Feedback">
+          </div>
+        </div>
+        <h3><strong>Question 8</strong></h3>
+        <h4>Diner and dancing beats dinner and a movie.</h4>
+        <div class="form-group col-md-3" style="padding: 0px;">
+          <select id="question8" class="form-control">
+            <option value="default" selected>Select an Option</option>
+            <option>1 (Strongly Disagree)</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5 (Strongly Agree)</option>
+          </select>
+          <div class="validateFeedback col-md-12" id="validQ8Feedback">
+          </div>
+        </div> 
+        <h3><strong>Question 9</strong></h3>
+        <h4>Mr. Nobody is one of the greatest movies.</h4>
+        <div class="form-group col-md-3" style="padding: 0px;">
+          <select id="question9" class="form-control">
+            <option value="default" selected>Select an Option</option>
+            <option>1 (Strongly Disagree)</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5 (Strongly Agree)</option>
+          </select>
+          <div class="validateFeedback col-md-12" id="validQ9Feedback">
+          </div>
+        </div>  
+        <h3><strong>Question 10</strong></h3>
+        <h4>Playstation is more fun than a good book.</h4>
+        <div class="form-group col-md-3" style="padding: 0px;">
+          <select id="question10" class="form-control">
+            <option value="default" selected>Select an Option</option>
+            <option>1 (Strongly Disagree)</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5 (Strongly Agree)</option>
+          </select>
+          <div class="validateFeedback col-md-12" id="validQ10Feedback">
+          </div>
+        </div> 
+        <!-- <a  href="\" id="submit" class="btn btn-lg col-md-12" style="background-color:#3379B7; color: white;" data-toggle="modal" data-target="#exampleModal"><h4><i class="far fa-check-square"></i> -->
+          <button  id="submit" class="btn btn-lg col-md-12" type="submit" style="background-color:#3379B7; color: white;" value="Submit"><h4><i class="far fa-check-square"></i>
+            Submit</h4></button>
+      </form> <!-- form for validation -->
 
       <div class="modal" id="exampleModal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
@@ -185,8 +212,9 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body" id="friendInfo">
-              <p>Modal body text goes here.</p>
+            <div class="modal-body" >
+              <p id="friendInfo">Modal body text goes here.</p>
+              <img src="http://lorempixel.com/400/200/sports" alt="..." class="img-thumbnail" id="friendImage">
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
@@ -211,6 +239,16 @@ $(document).ready(function(){
 
   $("#submit").on("click", function(event) {
     event.preventDefault();
+
+    // var friendDiv = $("#friendImage");
+    // friendDiv.attr("src", "http://lorempixel.com/400/200/cats");
+    // console.log("image set");
+    // $("#exampleModal").modal('show');  
+
+    if (!validateForm())
+    {
+      return;
+    }
 
     var scores = [];
     for (var i=1; i<11; i++)
@@ -241,7 +279,10 @@ $(document).ready(function(){
         if (data) {
 
           modalInfo.text("Your matched with " + data.name.toUpperCase() + "!");
-
+          var friendDiv = $("#friendImage");
+          console.log("The photo url is " + data.photo);
+          friendDiv.attr("src", data.photo);
+          console.log("image set");
         }
         else {
           modalInfo.text("Sorry something went wrong");
@@ -266,6 +307,49 @@ $(document).ready(function(){
       }); // end of post
 
   }); // end of submit
+
+// This function validates the form inputs
+// It only performs the validation on Submit
+// HLS maybe there is a better time to validate
+// like on select for the drop downs
+// something I've seen is on load
+  var validateForm = function(){
+    console.log('Validation rules');
+    var isGood = true;
+    var nameInput = $("#name");
+    var urlInput = $("#photoUrl");
+
+    for (var i=1; i<11; i++)
+    {
+      var number = $("#question"+i).val().charAt(0); 
+      if ( number === "d"){
+        $("#validQ"+i+"Feedback").text("Please Select a Number");
+        console.log("there is a problem " + i + " " + number );
+        isGood = false;
+      }
+      else {
+        $("#validQ"+i+"Feedback").text("");
+      }
+    }
+
+    console.log("there is a problem " + nameInput.val());
+    if ((!nameInput.val()) || (nameInput.val().trim() === "")){
+      $("#validNameFeedback").text("Please Enter a Nane");
+      console.log("there is a problem1");
+      isGood = false;
+    } else{
+      $("#validNameFeedback").text("");
+    };
+    if ((!urlInput.val()) || (urlInput.val().trim() === "")){
+      $("#validUrlFeedback").text("Please Enter a location for your picture");
+      console.log("there is a problem2");
+      isGood = false;
+    } else{
+      $("#validUrlFeedback").text("");
+    };
+
+    return isGood;    
+  }
 }); // end of document ready
 
   </script>

@@ -65,6 +65,7 @@ module.exports = function(app) {
     FriendData.addFriend(newFriend.name, newFriend.photoUrl, newFriend.scores);
 
     console.log("Your best friend is "+ bestFriend.name);
+    console.log("her photo is " + bestFriend.photo);
 
     // We then display the JSON of the best friend to the users
     res.json(bestFriend);
